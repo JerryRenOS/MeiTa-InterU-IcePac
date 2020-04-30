@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6v4-vn-WDJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMC-5K-aDC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -99,6 +99,155 @@
             </objects>
             <point key="canvasLocation" x="1023.1884057971015" y="126.5625"/>
         </scene>
+        <!--Add Task-->
+        <scene sceneID="e0x-rt-cfc">
+            <objects>
+                <viewController id="d36-Q2-Emt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osl-ir-nkr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xC4-gW-Tei">
+                                <rect key="frame" x="70" y="158" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-yellow-pink-512" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-Q6-H9Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="HZE-CW-WBU"/>
+                                            <constraint firstAttribute="width" constant="100" id="cvv-pD-OSc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaM-Sg-nIf">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-q5-rZ0">
+                                <rect key="frame" x="244" y="158" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-aqua-purple-512" translatesAutoresizingMaskIntoConstraints="NO" id="85P-kh-SdW">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Nm3-xv-8e9"/>
+                                            <constraint firstAttribute="height" constant="100" id="bbR-KQ-vna"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-8s-8WO">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="19p-sJ-Gg1">
+                                <rect key="frame" x="70" y="309.5" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-blue-512" translatesAutoresizingMaskIntoConstraints="NO" id="Z9h-bM-mWm">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="CiM-lN-dci"/>
+                                            <constraint firstAttribute="height" constant="100" id="mKn-z1-8Hp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8d-bp-tXB">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rXn-U2-lbj">
+                                <rect key="frame" x="244" y="309.5" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-yellow-orange-512" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-qq-cyP">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="FJV-hz-JWN"/>
+                                            <constraint firstAttribute="width" constant="100" id="xwn-ni-0jA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-Zl-LP9">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dmr-H0-bvH">
+                                <rect key="frame" x="244" y="461" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-green-aqua-512" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-k1-iFs">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="8yE-7r-wbB"/>
+                                            <constraint firstAttribute="height" constant="100" id="nMI-Ix-Qwf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8k-cN-pBG">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eIg-uZ-izW">
+                                <rect key="frame" x="70" y="461" width="100" height="121.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-green-orange-512" translatesAutoresizingMaskIntoConstraints="NO" id="09o-9t-6Yh">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="TM3-1q-L05"/>
+                                            <constraint firstAttribute="height" constant="100" id="m9U-UT-Zh0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nZ-aD-iaa">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeN-1j-ExN">
+                                <rect key="frame" x="0.0" y="783" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="downloads" id="m2U-ep-i7E"/>
+                                    <tabBarItem systemItem="more" id="aiw-hr-eQN"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="19p-sJ-Gg1" firstAttribute="leading" secondItem="am7-gI-2dd" secondAttribute="leading" constant="70" id="3Iw-kg-D5b"/>
+                            <constraint firstItem="eIg-uZ-izW" firstAttribute="top" secondItem="19p-sJ-Gg1" secondAttribute="bottom" constant="30" id="3yo-XL-ZhB"/>
+                            <constraint firstItem="am7-gI-2dd" firstAttribute="trailing" secondItem="g8T-q5-rZ0" secondAttribute="trailing" constant="70" id="8yK-pl-8Zf"/>
+                            <constraint firstItem="19p-sJ-Gg1" firstAttribute="top" secondItem="xC4-gW-Tei" secondAttribute="bottom" constant="30" id="Haf-XJ-j9x"/>
+                            <constraint firstItem="eIg-uZ-izW" firstAttribute="leading" secondItem="am7-gI-2dd" secondAttribute="leading" constant="70" id="R0J-eG-aPH"/>
+                            <constraint firstItem="xC4-gW-Tei" firstAttribute="top" secondItem="am7-gI-2dd" secondAttribute="top" constant="70" id="TBy-u2-pUb"/>
+                            <constraint firstItem="am7-gI-2dd" firstAttribute="trailing" secondItem="rXn-U2-lbj" secondAttribute="trailing" constant="70" id="UP9-kL-vIh"/>
+                            <constraint firstItem="am7-gI-2dd" firstAttribute="trailing" secondItem="Dmr-H0-bvH" secondAttribute="trailing" constant="70" id="bpX-yF-DbQ"/>
+                            <constraint firstItem="Dmr-H0-bvH" firstAttribute="top" secondItem="rXn-U2-lbj" secondAttribute="bottom" constant="30" id="pEX-tJ-Oeo"/>
+                            <constraint firstItem="xC4-gW-Tei" firstAttribute="leading" secondItem="am7-gI-2dd" secondAttribute="leading" constant="70" id="s67-kB-MeO"/>
+                            <constraint firstItem="rXn-U2-lbj" firstAttribute="top" secondItem="g8T-q5-rZ0" secondAttribute="bottom" constant="30" id="tGk-Bw-FZg"/>
+                            <constraint firstItem="g8T-q5-rZ0" firstAttribute="top" secondItem="am7-gI-2dd" secondAttribute="top" constant="70" id="vuA-KV-bws"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="am7-gI-2dd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Task" id="U5x-pC-pO0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-qa-lat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2879.7101449275365" y="146.65178571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eUL-t9-Qd6">
             <objects>
@@ -117,6 +266,24 @@
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="126.5625"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C7p-jP-Kxs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMC-5K-aDC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qao-eD-7Ap">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d36-Q2-Emt" kind="relationship" relationship="rootViewController" id="NjO-BQ-T8n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXx-2Y-0mM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969.5652173913045" y="146.65178571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Burma" width="187" height="187"/>
@@ -125,5 +292,11 @@
         <image name="Japan" width="187" height="187"/>
         <image name="Laos" width="187" height="187"/>
         <image name="Philipines" width="187" height="187"/>
+        <image name="circle-aqua-purple-512" width="512" height="512"/>
+        <image name="circle-blue-512" width="512" height="512"/>
+        <image name="circle-green-aqua-512" width="512" height="512"/>
+        <image name="circle-green-orange-512" width="512" height="512"/>
+        <image name="circle-yellow-orange-512" width="512" height="512"/>
+        <image name="circle-yellow-pink-512" width="512" height="512"/>
     </resources>
 </document>
