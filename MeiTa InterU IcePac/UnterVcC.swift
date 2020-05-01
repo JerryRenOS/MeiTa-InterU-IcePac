@@ -9,3 +9,5 @@
 import UIKit
 class ViewController:UIViewController{override func viewDidLoad(){super.viewDidLoad()}}
 
+// MARK: - Vast majority of the information are in the storyboards - this file serves as programmatic UI-assistant when needed
+   
