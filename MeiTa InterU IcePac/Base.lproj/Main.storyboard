@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tmb-ti-Uut">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dbx-aV-1KX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Rapidity View Controller-->
+        <scene sceneID="aX8-KB-Qh8">
+            <objects>
+                <viewController id="Csx-cx-BlV" customClass="RapidityViewController" customModule="MeiTa_InterU_IcePac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UM1-lv-FOe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emptiness (for JSON testing)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGY-ya-4Vy">
+                                <rect key="frame" x="13" y="159" width="388" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tGY-ya-4Vy" firstAttribute="top" secondItem="96R-db-S5l" secondAttribute="top" constant="115" id="NnK-56-b8X"/>
+                            <constraint firstItem="tGY-ya-4Vy" firstAttribute="leading" secondItem="96R-db-S5l" secondAttribute="leading" constant="13" id="oYF-eL-kd9"/>
+                            <constraint firstItem="96R-db-S5l" firstAttribute="trailing" secondItem="tGY-ya-4Vy" secondAttribute="trailing" constant="13" id="yk7-ew-4W9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="96R-db-S5l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wm4-D5-3Zx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473.913043478261" y="-746.65178571428567"/>
+        </scene>
         <!--Where to?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -277,6 +306,99 @@
             </objects>
             <point key="canvasLocation" x="1969.5652173913045" y="146.65178571428569"/>
         </scene>
+        <!--Voyager-->
+        <scene sceneID="6eD-eq-9SQ">
+            <objects>
+                <viewController id="Dbx-aV-1KX" customClass="VoyagerViewController" customModule="MeiTa_InterU_IcePac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D3g-j9-eUy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-c4-fDs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ollec" rowHeight="156" id="5Rz-BB-mjc" customClass="VoyagerCell" customModule="MeiTa_InterU_IcePac" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Rz-BB-mjc" id="ds7-P0-t4S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-W7-kvH">
+                                                    <rect key="frame" x="20" y="40" width="394" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="euT-F7-ri3">
+                                                        <size key="itemSize" width="105" height="97"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onitcelloc" id="cIS-bm-ctB" customClass="VoyagerCollectionCell" customModule="MeiTa_InterU_IcePac" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="4" width="105" height="97"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1In-3j-lGP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="105" height="97"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-bj-g6r">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="70"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Burma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huc-T4-fjI">
+                                                                        <rect key="frame" x="0.0" y="73" width="105" height="17"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="105" height="97"/>
+                                                            <connections>
+                                                                <outlet property="voyagerCollectionVcImage" destination="CuU-bj-g6r" id="DWf-uW-CA8"/>
+                                                                <outlet property="voyagerCollectionVcRabel" destination="huc-T4-fjI" id="Gx4-23-fzd"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular Destinations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvt-TJ-T2E">
+                                                    <rect key="frame" x="20" y="11" width="158" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="voyagerCelloRabel" destination="Mvt-TJ-T2E" id="uqd-NN-KN7"/>
+                                            <outlet property="voyagerCollectionV" destination="ezI-W7-kvH" id="cTw-KU-1Ke"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Cn-eM-Ujv" firstAttribute="bottom" secondItem="5nU-c4-fDs" secondAttribute="bottom" id="2qN-YU-jCH"/>
+                            <constraint firstItem="5nU-c4-fDs" firstAttribute="leading" secondItem="6Cn-eM-Ujv" secondAttribute="leading" id="I2e-S5-33p"/>
+                            <constraint firstItem="5nU-c4-fDs" firstAttribute="top" secondItem="6Cn-eM-Ujv" secondAttribute="top" id="Lwj-xB-31H"/>
+                            <constraint firstItem="6Cn-eM-Ujv" firstAttribute="trailing" secondItem="5nU-c4-fDs" secondAttribute="trailing" id="NqM-rh-dN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Cn-eM-Ujv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Voyager" id="xJy-Nh-oxY"/>
+                    <connections>
+                        <outlet property="voyagerTableV" destination="5nU-c4-fDs" id="V94-cz-qll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n6-zv-XVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="1047.9910714285713"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jM4-gn-CcV">
             <objects>
@@ -289,6 +411,7 @@
                     <connections>
                         <segue destination="zMC-5K-aDC" kind="relationship" relationship="viewControllers" id="Ome-E5-8Me"/>
                         <segue destination="6v4-vn-WDJ" kind="relationship" relationship="viewControllers" id="5e9-sY-bbU"/>
+                        <segue destination="Dbx-aV-1KX" kind="relationship" relationship="viewControllers" id="eH3-LG-4n1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q33-pE-4uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

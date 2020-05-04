@@ -9,5 +9,49 @@
 import UIKit
 class ViewController:UIViewController{override func viewDidLoad(){super.viewDidLoad()}}
 
-// MARK: - Vast majority of the information are in the storyboards - this file serves as programmatic UI-assistant when needed
-   
+
+
+class VoyagerViewController:  UIViewController {
+    
+    @IBOutlet weak var voyagerTableV: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        voyagerTableV.dataSource = self
+        voyagerTableV.delegate = self
+    }
+    
+
+}
+
+extension VoyagerViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = voyagerTableV.dequeueReusableCell(withIdentifier: "ollec", for: indexPath) as! VoyagerCell
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 156  // maybe use cell.rowheight ?
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
