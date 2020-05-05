@@ -9,11 +9,6 @@
 import UIKit
 
 class VoyagerCollectionCell: UICollectionViewCell {
-    
     @IBOutlet weak var voyagerCollectionVcImage: UIImageView!
-    
     @IBOutlet weak var voyagerCollectionVcRabel: UILabel!
-    
-    
-    
 }

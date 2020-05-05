@@ -14,6 +14,7 @@
 		8F5887B724574CA2009D41CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5887B624574CA2009D41CE /* Assets.xcassets */; };
 		8F5887BA24574CA2009D41CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5887B824574CA2009D41CE /* LaunchScreen.storyboard */; };
 		8F6D4334245CD9CD002C5A80 /* RapidityViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */; };
+		8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC479442461E2DE001878DA /* CoreMapViewC.swift */; };
 		8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5B2460B04600468449 /* VoyagerCell.swift */; };
 		8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		8F5887B924574CA2009D41CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5887BB24574CA2009D41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidityViewC.swift; sourceTree = "<group>"; };
+		8FC479442461E2DE001878DA /* CoreMapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMapViewC.swift; sourceTree = "<group>"; };
 		8FF02C5B2460B04600468449 /* VoyagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCell.swift; sourceTree = "<group>"; };
 		8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				8F5887B124574CA0009D41CE /* UnterVcC.swift */,
 				8FF02C5B2460B04600468449 /* VoyagerCell.swift */,
 				8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */,
+				8FC479442461E2DE001878DA /* CoreMapViewC.swift */,
 				8F5887B324574CA0009D41CE /* Main.storyboard */,
 				8F5887B624574CA2009D41CE /* Assets.xcassets */,
 				8F5887B824574CA2009D41CE /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				8F5887B224574CA0009D41CE /* UnterVcC.swift in Sources */,
 				8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */,
+				8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */,
 				8F5887AE24574CA0009D41CE /* AppD.swift in Sources */,
 				8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */,
 				8F6D4334245CD9CD002C5A80 /* RapidityViewC.swift in Sources */,

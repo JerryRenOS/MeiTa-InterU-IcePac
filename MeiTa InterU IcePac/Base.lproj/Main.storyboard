@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dbx-aV-1KX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tmb-ti-Uut">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -399,6 +399,48 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="1047.9910714285713"/>
         </scene>
+        <!--MapKit-->
+        <scene sceneID="eNK-js-mhB">
+            <objects>
+                <viewController id="8FI-Cj-9NL" customClass="CoreMapViewController" customModule="MeiTa_InterU_IcePac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nNc-n7-rvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="njN-Z0-OoD">
+                                <rect key="frame" x="20" y="144" width="374" height="669"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adventurer Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-0u-1vm">
+                                <rect key="frame" x="110" y="44" width="199" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jxG-jy-2n9">
+                                <rect key="frame" x="2" y="80" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="njN-Z0-OoD" firstAttribute="leading" secondItem="LE1-aI-wEE" secondAttribute="leading" constant="20" id="Rib-jz-dcF"/>
+                            <constraint firstItem="LE1-aI-wEE" firstAttribute="trailing" secondItem="njN-Z0-OoD" secondAttribute="trailing" constant="20" id="Umc-mv-glA"/>
+                            <constraint firstItem="LE1-aI-wEE" firstAttribute="bottom" secondItem="njN-Z0-OoD" secondAttribute="bottom" id="iq8-bR-UbT"/>
+                            <constraint firstItem="njN-Z0-OoD" firstAttribute="top" secondItem="LE1-aI-wEE" secondAttribute="top" constant="100" id="r6Z-ps-Bb8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LE1-aI-wEE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MapKit" id="EjR-Vt-BaC"/>
+                    <connections>
+                        <outlet property="appleMapView" destination="njN-Z0-OoD" id="eF4-C0-jf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJU-qq-oyu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.60869565217399" y="1889.7321428571427"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jM4-gn-CcV">
             <objects>
@@ -412,6 +454,7 @@
                         <segue destination="zMC-5K-aDC" kind="relationship" relationship="viewControllers" id="Ome-E5-8Me"/>
                         <segue destination="6v4-vn-WDJ" kind="relationship" relationship="viewControllers" id="5e9-sY-bbU"/>
                         <segue destination="Dbx-aV-1KX" kind="relationship" relationship="viewControllers" id="eH3-LG-4n1"/>
+                        <segue destination="8FI-Cj-9NL" kind="relationship" relationship="viewControllers" id="0vw-bd-KDG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q33-pE-4uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
