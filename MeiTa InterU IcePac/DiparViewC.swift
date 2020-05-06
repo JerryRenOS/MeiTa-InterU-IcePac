@@ -14,7 +14,10 @@ class DiparViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        endPointConquerization()
+        
+        jokeGETrequest()
+ //       endPointConquerization()
+        
     }
     
     func endPointConquerization() {
@@ -62,10 +65,37 @@ class DiparViewController: UIViewController {
                     print("error parsing data: \(error.localizedDescription)")
                 }
             }
-        }
+        }   
         dataTask.resume()
     }
-     
-     
+}
+
+extension DiparViewController {
     
+    func jokeGETrequest() {
+        
+        guard let jokeURL = URL(string: "https://api.chucknorris.io/jokes/random") else {
+            print("jokeURL invalid")
+            return
+        }
+        
+        let session = URLSession.shared
+        session.dataTask(with: jokeURL) { (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                    // try another later
+                    if let jsonDict = json as? [String : Any] {
+                        if let value = jsonDict["value"] as? String {
+                            DispatchQueue.main.async {
+                                print(value)
+                            }
+                        }
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }.resume()
+    }
 }
