@@ -34,14 +34,14 @@ class RapidityViewController: UIViewController {
                 print(error)
             } else {
                 let httpResponse = response as? HTTPURLResponse
-             //   print(httpResponse)
-                print(data)
+                print(httpResponse)
+                print(String(decoding: data!, as: UTF8.self))
             }
         })
 
         dataTask.resume()
            
-        
+             
         
 
 //        let headers = [
