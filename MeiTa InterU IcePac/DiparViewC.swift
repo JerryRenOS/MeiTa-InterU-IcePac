@@ -15,10 +15,33 @@ class DiparViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        jokeGETrequest()
+        dispatch()
+        
+   //     jokeGETrequest()
  //       endPointConquerization()
         
+        tripAdvisorTryOut()
+        
+        
     }
+    
+    func tripAdvisorTryOut() {
+
+        
+                          
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func endPointConquerization() {
         

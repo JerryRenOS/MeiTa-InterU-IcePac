@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F0FDFBC24624BDD003E25DF /* DiparViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0FDFBB24624BDD003E25DF /* DiparViewC.swift */; };
+		8F4320962465BCB7007010FD /* NewzStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4320952465BCB7007010FD /* NewzStructs.swift */; };
+		8F4320982465BD0D007010FD /* NetworkDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4320972465BD0D007010FD /* NetworkDispatch.swift */; };
+		8F43209E2465F904007010FD /* GlobalCons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43209D2465F904007010FD /* GlobalCons.swift */; };
+		8F4320A024660240007010FD /* TripAdvImagesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43209F24660240007010FD /* TripAdvImagesStruct.swift */; };
 		8F5887AE24574CA0009D41CE /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5887AD24574CA0009D41CE /* AppD.swift */; };
 		8F5887B024574CA0009D41CE /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5887AF24574CA0009D41CE /* SceneD.swift */; };
 		8F5887B224574CA0009D41CE /* UnterVcC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5887B124574CA0009D41CE /* UnterVcC.swift */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		8F0FDFBB24624BDD003E25DF /* DiparViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiparViewC.swift; sourceTree = "<group>"; };
+		8F4320952465BCB7007010FD /* NewzStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewzStructs.swift; sourceTree = "<group>"; };
+		8F4320972465BD0D007010FD /* NetworkDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatch.swift; sourceTree = "<group>"; };
+		8F43209D2465F904007010FD /* GlobalCons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCons.swift; sourceTree = "<group>"; };
+		8F43209F24660240007010FD /* TripAdvImagesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAdvImagesStruct.swift; sourceTree = "<group>"; };
 		8F5887AA24574CA0009D41CE /* MeiTa InterU IcePac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeiTa InterU IcePac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5887AD24574CA0009D41CE /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F5887AF24574CA0009D41CE /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
@@ -68,12 +76,16 @@
 			children = (
 				8F5887AD24574CA0009D41CE /* AppD.swift */,
 				8F5887AF24574CA0009D41CE /* SceneD.swift */,
-				8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */,
-				8F0FDFBB24624BDD003E25DF /* DiparViewC.swift */,
 				8F5887B124574CA0009D41CE /* UnterVcC.swift */,
 				8FF02C5B2460B04600468449 /* VoyagerCell.swift */,
 				8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */,
 				8FC479442461E2DE001878DA /* CoreMapViewC.swift */,
+				8F0FDFBB24624BDD003E25DF /* DiparViewC.swift */,
+				8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */,
+				8F4320972465BD0D007010FD /* NetworkDispatch.swift */,
+				8F43209F24660240007010FD /* TripAdvImagesStruct.swift */,
+				8F4320952465BCB7007010FD /* NewzStructs.swift */,
+				8F43209D2465F904007010FD /* GlobalCons.swift */,
 				8F5887B324574CA0009D41CE /* Main.storyboard */,
 				8F5887B624574CA2009D41CE /* Assets.xcassets */,
 				8F5887B824574CA2009D41CE /* LaunchScreen.storyboard */,
@@ -153,13 +165,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4320962465BCB7007010FD /* NewzStructs.swift in Sources */,
+				8F4320A024660240007010FD /* TripAdvImagesStruct.swift in Sources */,
 				8F5887B224574CA0009D41CE /* UnterVcC.swift in Sources */,
+				8F4320982465BD0D007010FD /* NetworkDispatch.swift in Sources */,
 				8F0FDFBC24624BDD003E25DF /* DiparViewC.swift in Sources */,
 				8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */,
 				8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */,
 				8F5887AE24574CA0009D41CE /* AppD.swift in Sources */,
 				8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */,
 				8F6D4334245CD9CD002C5A80 /* RapidityViewC.swift in Sources */,
+				8F43209E2465F904007010FD /* GlobalCons.swift in Sources */,
 				8F5887B024574CA0009D41CE /* SceneD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
