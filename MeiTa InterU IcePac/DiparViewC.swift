@@ -17,12 +17,11 @@ class DiparViewController: UIViewController {
         
         dispatch()
         
-   //     jokeGETrequest()
- //       endPointConquerization()
+        jokeGETrequest()
+        endPointConquerization()
         
         tripAdvisorTryOut()
-        
-        
+
     }
     
     func tripAdvisorTryOut() {

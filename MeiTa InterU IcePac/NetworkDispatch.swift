@@ -35,8 +35,7 @@ enum NetworkError: Error {
 }
 
 extension DiparViewController {
-    
-    
+
     func dispatch() {
 
         let dispatchGroup = DispatchGroup()
@@ -50,9 +49,6 @@ extension DiparViewController {
             do {
       //          let newzFeed = try decoder.decode(Newzfeed.self, from: unwrappedData)
 
-                   
-                
-                
             }
             catch {
                 os_log("Error: ", error.localizedDescription)
