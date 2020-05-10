@@ -15,7 +15,9 @@ class FlyOverViewC: UIViewController, MKMapViewDelegate {
     let locatourDict = [
         "Statue of Liberty": FlyoverAwesomePlace.newYorkStatueOfLiberty,
         "Miami Beach": FlyoverAwesomePlace.miamiBeach,
-        "Golden Gate Bridge": FlyoverAwesomePlace.sanFranciscoGoldenGateBridge
+        "Golden Gate Bridge": FlyoverAwesomePlace.sanFranciscoGoldenGateBridge,
+        "Central Park": FlyoverAwesomePlace.centralParkNY,
+        "Eiffel Tower": FlyoverAwesomePlace.parisEiffelTower
     ]
 
     @IBOutlet weak var flyMap: MKMapView!
@@ -29,9 +31,9 @@ class FlyOverViewC: UIViewController, MKMapViewDelegate {
              
     @IBAction func locatourButtonTapped(_ sender: UIButton) {
         guard let randomLocatour = locatourDict.randomElement() else { return }
-        let camera = FlyoverCamera(mapView: flyMap, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 300, pitch: 45.0, headingStep: 40.0))
+        let camera = FlyoverCamera(mapView: flyMap, configuration: FlyoverCamera.Configuration(duration: 11.0, altitude: 300, pitch: 45.0, headingStep: 40.0))
         camera.start(flyover: randomLocatour.value)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(6)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(11)) {
             camera.stop()
         }
         placedRabel.text = "\(randomLocatour.key)"

@@ -408,7 +408,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="njN-Z0-OoD">
-                                <rect key="frame" x="20" y="144" width="374" height="669"/>
+                                <rect key="frame" x="20" y="144" width="374" height="569"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adventurer Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-0u-1vm">
                                 <rect key="frame" x="110" y="44" width="199" height="36"/>
@@ -422,12 +422,22 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-Y7-mXW">
+                                <rect key="frame" x="332" y="763" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-lS-eCL">
+                                <rect key="frame" x="20" y="763" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Left"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="njN-Z0-OoD" firstAttribute="leading" secondItem="LE1-aI-wEE" secondAttribute="leading" constant="20" id="Rib-jz-dcF"/>
                             <constraint firstItem="LE1-aI-wEE" firstAttribute="trailing" secondItem="njN-Z0-OoD" secondAttribute="trailing" constant="20" id="Umc-mv-glA"/>
-                            <constraint firstItem="LE1-aI-wEE" firstAttribute="bottom" secondItem="njN-Z0-OoD" secondAttribute="bottom" id="iq8-bR-UbT"/>
+                            <constraint firstItem="LE1-aI-wEE" firstAttribute="bottom" secondItem="njN-Z0-OoD" secondAttribute="bottom" constant="100" id="iq8-bR-UbT"/>
                             <constraint firstItem="njN-Z0-OoD" firstAttribute="top" secondItem="LE1-aI-wEE" secondAttribute="top" constant="100" id="r6Z-ps-Bb8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LE1-aI-wEE"/>
