@@ -22,6 +22,8 @@
 		8F5887BA24574CA2009D41CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5887B824574CA2009D41CE /* LaunchScreen.storyboard */; };
 		8F6D4334245CD9CD002C5A80 /* RapidityViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */; };
 		8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC479442461E2DE001878DA /* CoreMapViewC.swift */; };
+		8FDD81B2246A1B3200204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */; };
+		8FDD81B5246A1C2E00204E6D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */; };
 		8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5B2460B04600468449 /* VoyagerCell.swift */; };
 		8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		8F5887BB24574CA2009D41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F6D4333245CD9CD002C5A80 /* RapidityViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidityViewC.swift; sourceTree = "<group>"; };
 		8FC479442461E2DE001878DA /* CoreMapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMapViewC.swift; sourceTree = "<group>"; };
+		8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		8FF02C5B2460B04600468449 /* VoyagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCell.swift; sourceTree = "<group>"; };
 		8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCollectionCell.swift; sourceTree = "<group>"; };
 		BE544FA2667362709D77A60F /* Pods-MeiTa InterU IcePac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTa InterU IcePac.debug.xcconfig"; path = "Target Support Files/Pods-MeiTa InterU IcePac/Pods-MeiTa InterU IcePac.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,12 +108,22 @@
 				8F4320952465BCB7007010FD /* NewzStructs.swift */,
 				8F43209D2465F904007010FD /* GlobalCons.swift */,
 				8F4320A124664171007010FD /* FlyOverViewC.swift */,
+				8FDD81B3246A1B4A00204E6D /* Views */,
 				8F5887B324574CA0009D41CE /* Main.storyboard */,
 				8F5887B624574CA2009D41CE /* Assets.xcassets */,
 				8F5887B824574CA2009D41CE /* LaunchScreen.storyboard */,
 				8F5887BB24574CA2009D41CE /* Info.plist */,
 			);
 			path = "MeiTa InterU IcePac";
+			sourceTree = "<group>";
+		};
+		8FDD81B3246A1B4A00204E6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */,
+				8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E3C7AAAB750DCFFFE95195F1 /* Pods */ = {
@@ -243,10 +257,12 @@
 				8F4320982465BD0D007010FD /* NetworkDispatch.swift in Sources */,
 				8F0FDFBC24624BDD003E25DF /* DiparViewC.swift in Sources */,
 				8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */,
+				8FDD81B5246A1C2E00204E6D /* ImageViewExtension.swift in Sources */,
 				8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */,
 				8F5887AE24574CA0009D41CE /* AppD.swift in Sources */,
 				8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */,
 				8F6D4334245CD9CD002C5A80 /* RapidityViewC.swift in Sources */,
+				8FDD81B2246A1B3200204E6D /* UIButtonExtension.swift in Sources */,
 				8F43209E2465F904007010FD /* GlobalCons.swift in Sources */,
 				8F5887B024574CA0009D41CE /* SceneD.swift in Sources */,
 			);

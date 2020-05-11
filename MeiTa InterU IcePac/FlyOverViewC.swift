@@ -19,6 +19,8 @@ class FlyOverViewC: UIViewController, MKMapViewDelegate {
         "Central Park": FlyoverAwesomePlace.centralParkNY,
         "Eiffel Tower": FlyoverAwesomePlace.parisEiffelTower
     ]
+    // these are repaceable with
+    // CLLocationCoordinate2D(latitude:, longitude: )
 
     @IBOutlet weak var flyMap: MKMapView!
     @IBOutlet weak var placedRabel: UILabel!
