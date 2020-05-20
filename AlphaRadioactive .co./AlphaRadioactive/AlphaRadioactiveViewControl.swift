@@ -110,6 +110,20 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let firstTouch = touches.first {
+            let firstTouchLocation = firstTouch.location(in: sceneView)
+            
+            let hitResults = sceneView.hitTest(firstTouchLocation, types: .existingPlaneUsingExtent)
+            
+            if !hitResults.isEmpty {
+                 print("plane' been touched")
+            } else {
+                print("touch was outside of the plane")
+            }
+        }
+    }
+    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
