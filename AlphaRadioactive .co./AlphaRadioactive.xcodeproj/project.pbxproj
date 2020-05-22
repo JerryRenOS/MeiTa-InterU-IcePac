@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3556BC2476DFD100FB019F /* TouchesBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3556BB2476DFD100FB019F /* TouchesBegan.swift */; };
+		8F3556BE2476E27200FB019F /* ManifestationFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3556BD2476E27200FB019F /* ManifestationFuncs.swift */; };
 		8F7BBBF42470429B003B4331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BBBF32470429B003B4331 /* AppDelegate.swift */; };
 		8F7BBBF62470429B003B4331 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7BBBF52470429B003B4331 /* art.scnassets */; };
 		8F7BBBF82470429B003B4331 /* AlphaRadioactiveViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BBBF72470429B003B4331 /* AlphaRadioactiveViewControl.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F3556BB2476DFD100FB019F /* TouchesBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchesBegan.swift; sourceTree = "<group>"; };
+		8F3556BD2476E27200FB019F /* ManifestationFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestationFuncs.swift; sourceTree = "<group>"; };
 		8F7BBBF02470429B003B4331 /* AlphaRadioactive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaRadioactive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7BBBF32470429B003B4331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7BBBF52470429B003B4331 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				8F7BBBF32470429B003B4331 /* AppDelegate.swift */,
 				8F7BBBF52470429B003B4331 /* art.scnassets */,
 				8F7BBBF72470429B003B4331 /* AlphaRadioactiveViewControl.swift */,
+				8F3556BB2476DFD100FB019F /* TouchesBegan.swift */,
+				8F3556BD2476E27200FB019F /* ManifestationFuncs.swift */,
 				8F7BBBF92470429B003B4331 /* Main.storyboard */,
 				8F7BBBFC247042A2003B4331 /* Assets.xcassets */,
 				8F7BBBFE247042A2003B4331 /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3556BE2476E27200FB019F /* ManifestationFuncs.swift in Sources */,
 				8F7BBBF82470429B003B4331 /* AlphaRadioactiveViewControl.swift in Sources */,
 				8F7BBBF42470429B003B4331 /* AppDelegate.swift in Sources */,
+				8F3556BC2476DFD100FB019F /* TouchesBegan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
