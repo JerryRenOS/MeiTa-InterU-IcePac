@@ -24,7 +24,7 @@
 		8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC479442461E2DE001878DA /* CoreMapViewC.swift */; };
 		8FDD81B2246A1B3200204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */; };
 		8FDD81B5246A1C2E00204E6D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */; };
-		8FEB0D5B24B92625000C01C4 /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB0D5A24B92625000C01C4 /* IBDesignable.swift */; };
+		8FEB0D5B24B92625000C01C4 /* IBDesignable Collectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB0D5A24B92625000C01C4 /* IBDesignable Collectivity.swift */; };
 		8FEB0D5D24B92713000C01C4 /* ElectroCalcViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB0D5C24B92713000C01C4 /* ElectroCalcViewC.swift */; };
 		8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5B2460B04600468449 /* VoyagerCell.swift */; };
 		8FF02C5E2460B7D300468449 /* VoyagerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */; };
@@ -50,7 +50,7 @@
 		8FC479442461E2DE001878DA /* CoreMapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMapViewC.swift; sourceTree = "<group>"; };
 		8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		8FEB0D5A24B92625000C01C4 /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		8FEB0D5A24B92625000C01C4 /* IBDesignable Collectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IBDesignable Collectivity.swift"; sourceTree = "<group>"; };
 		8FEB0D5C24B92713000C01C4 /* ElectroCalcViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroCalcViewC.swift; sourceTree = "<group>"; };
 		8FF02C5B2460B04600468449 /* VoyagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCell.swift; sourceTree = "<group>"; };
 		8FF02C5D2460B7D200468449 /* VoyagerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerCollectionCell.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			children = (
 				8FDD81B1246A1B3200204E6D /* UIButtonExtension.swift */,
 				8FDD81B4246A1C2E00204E6D /* ImageViewExtension.swift */,
-				8FEB0D5A24B92625000C01C4 /* IBDesignable.swift */,
+				8FEB0D5A24B92625000C01C4 /* IBDesignable Collectivity.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				8F5887B224574CA0009D41CE /* UnterVcC.swift in Sources */,
 				8F4320982465BD0D007010FD /* NetworkDispatch.swift in Sources */,
 				8F0FDFBC24624BDD003E25DF /* DiparViewC.swift in Sources */,
-				8FEB0D5B24B92625000C01C4 /* IBDesignable.swift in Sources */,
+				8FEB0D5B24B92625000C01C4 /* IBDesignable Collectivity.swift in Sources */,
 				8FF02C5C2460B04600468449 /* VoyagerCell.swift in Sources */,
 				8FDD81B5246A1C2E00204E6D /* ImageViewExtension.swift in Sources */,
 				8FC479452461E2DE001878DA /* CoreMapViewC.swift in Sources */,
