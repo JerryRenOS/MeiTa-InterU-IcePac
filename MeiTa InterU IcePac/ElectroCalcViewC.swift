@@ -14,6 +14,7 @@ class ElectroCalcViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .some(UIColor.black)
+        view.backgroundColor = generateColorWithRGB(red: 255, green: 161, blue: 250, alpha: 1) // randomly picked out 
     }
     
 }
