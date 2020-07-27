@@ -14,12 +14,12 @@ class FlyOverViewC: UIViewController, MKMapViewDelegate {
     
     let locatourDict = [
         "Statue of Liberty": FlyoverAwesomePlace.newYorkStatueOfLiberty,
-        "Miami Beach": FlyoverAwesomePlace.miamiBeach,
-        "Golden Gate Bridge": FlyoverAwesomePlace.sanFranciscoGoldenGateBridge,
         "Central Park": FlyoverAwesomePlace.centralParkNY,
+        "Golden Gate Bridge": FlyoverAwesomePlace.sanFranciscoGoldenGateBridge,
+        "Miami Beach": FlyoverAwesomePlace.miamiBeach,
         "Eiffel Tower": FlyoverAwesomePlace.parisEiffelTower
     ]
-    // these are repaceable with
+    // these are replaceable with
     // CLLocationCoordinate2D(latitude:, longitude: )
 
     @IBOutlet weak var flyMap: MKMapView!
@@ -45,10 +45,10 @@ class FlyOverViewC: UIViewController, MKMapViewDelegate {
 extension FlyOverViewC {
     
     func setUpFlyMap() {
-        self.flyMap.mapType = .hybridFlyover
         self.flyMap.showsBuildings = true
         self.flyMap.isScrollEnabled = true
         self.flyMap.isZoomEnabled = true
+        self.flyMap.mapType = .hybridFlyover
     }
 }
 
