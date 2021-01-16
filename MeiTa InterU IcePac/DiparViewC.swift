@@ -26,24 +26,9 @@ class DiparViewController: UIViewController {
     
     func tripAdvisorTryOut() {
 
-        
-                          
-        
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     func endPointConquerization() {
-        
         guard let endPointUrl = URL(string: "https://ocr-text-extractor.p.rapidapi.com/detect-text-from-image-uri") else {
             return
         }
