@@ -12,8 +12,9 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         let byfinbi  = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
         DispatchQueue.main.async {
-    //        self.circularLayer.strokeEnd = byfinbi / 4.35
-    // syncing download progress with the progress track (not working properly if the download is too fast)
+            self.byfinbiDisplay.text = "\(Int(byfinbi * 100))%"         
+    //     self.circularLayer.strokeEnd = byfinbi / 4.35
+    //     syncing download progress with the progress track (not working properly if the download is too fast)
         }
         print(totalBytesWritten, totalBytesExpectedToWrite)
     }
@@ -21,12 +22,28 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     }
     
     private let circularLayer = CAShapeLayer()
-    private var filledOrNot = true // perform the ternary operation in  future commit
+    private var filledOrNot = true // perform the ternary operation in a future commit
     
     override func viewDidLoad() {
         super.viewDidLoad()
         circularRendering()
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(piTraversal)))
+        percentageDisplaySetup()
+    }
+    
+    private let byfinbiDisplay: UILabel = {
+        let display = UILabel.init()
+        display.textAlignment = NSTextAlignment.center
+        display.text = "TakeOff"
+        display.font = UIFont(name: "Futura", size: 22)
+        return display
+    }()
+    
+    private func percentageDisplaySetup() {
+        view.addSubview(byfinbiDisplay)
+        byfinbiDisplay.frame = CGRect(x: 0, y: 0, width: 111, height: 111)
+        byfinbiDisplay.center = view.center
+        byfinbiDisplay.textColor = .systemTeal
     }
     
     func circularRendering() {
@@ -112,3 +129,4 @@ public func navigationBarGlobalConfiguration() {
     UINavigationBar.appearance().isTranslucent = false
 }
 
+// print(UIFont.familyNames)
