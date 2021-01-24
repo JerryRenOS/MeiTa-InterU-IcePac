@@ -23,6 +23,7 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     
     private let circularLayer = CAShapeLayer()
     private var filledOrNot = true // perform the ternary operation in a future commit
+    private var pulsivityLayer: CAShapeLayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,14 +48,17 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     }
     
     func circularRendering() {
-//        let centerOfView = view.center
-//        let circularPath = UIBezierPath(arcCenter: centerOfView, radius: 101, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi * 2, clockwise: true)
-        
+
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 101, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
         
+        
+        pulsivityBuilder(bezierPath: circularPath)
+    
         trackBuilder(bezierPath: circularPath)
         circulationBuilder(using: circularPath)
         
+        
+     
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [self] in
             piTraversal()
             circularLayer.fillColor = UIColor.clear.cgColor
@@ -67,6 +71,29 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     }
     
     // MARK: -
+   
+    private func pulsivityBuilder(bezierPath: UIBezierPath) {
+        pulsivityLayer = CAShapeLayer.init()
+        guard let pulsivityLayer = pulsivityLayer else
+        { return }
+        pulsivityLayer.strokeColor = UIColor.systemGray.cgColor
+        pulsivityLayer.fillColor = UIColor.systemPink.cgColor
+        pulsivityLayer.path = bezierPath.cgPath
+        pulsivityLayer.position = view.center
+        pulsivityLayer.lineCap = CAShapeLayerLineCap.round
+        pulsivityLayer.lineWidth = 10
+        
+        
+        view.layer.addSublayer(pulsivityLayer)
+        pulsivityMovement()
+    }
+    
+    private func pulsivityMovement() {
+        let basicAnimation = CABasicAnimation(keyPath: "transform.scale")
+        basicAnimation.toValue = 1.4
+        basicAnimation.duration = 3.9
+        pulsivityLayer?.add(basicAnimation, forKey: "pulp")
+    }
     
     private func trackBuilder(bezierPath: UIBezierPath) {
         let layerOfTrack = CAShapeLayer.init()
@@ -130,3 +157,7 @@ public func navigationBarGlobalConfiguration() {
 }
 
 // print(UIFont.familyNames)
+
+
+//        let centerOfView = view.center
+//        let circularPath = UIBezierPath(arcCenter: centerOfView, radius: 101, startAngle: -CGFloat.pi / 2, endAngle: CGFloat.pi * 2, clockwise: true)
