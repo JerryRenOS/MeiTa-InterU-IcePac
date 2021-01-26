@@ -9,18 +9,6 @@ import UIKit
 
 class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
     
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        let byfinbi  = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
-        DispatchQueue.main.async {
-            self.byfinbiDisplay.text = "\(Int(byfinbi * 100))%"         
-    //     self.circularLayer.strokeEnd = byfinbi / 4.35
-    //     syncing download progress with the progress track (not working properly if the download is too fast)
-        }
-        print(totalBytesWritten, totalBytesExpectedToWrite)
-    }
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-    }
-    
     private let circularLayer = CAShapeLayer()
     private var filledOrNot = true // perform the ternary operation in a future commit
     private var pulsivityLayer: CAShapeLayer?
@@ -32,7 +20,7 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
         percentageDisplaySetup()
     }
     
-    private let byfinbiDisplay: UILabel = {
+    let byfinbiDisplay: UILabel = {
         let display = UILabel.init()
         display.textAlignment = NSTextAlignment.center
         display.text = "TakeOff"
