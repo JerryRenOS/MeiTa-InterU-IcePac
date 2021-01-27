@@ -24,7 +24,7 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
         let display = UILabel.init()
         display.textAlignment = NSTextAlignment.center
         display.text = "TakeOff"
-        display.font = UIFont(name: "Futura", size: 24)
+        display.font = UIFont(name: "Futura", size: 22)
         return display
     }()
     
@@ -39,11 +39,14 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
 
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 101, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
         
+        
         pulsivityBuilder(bezierPath: circularPath)
     
         trackBuilder(bezierPath: circularPath)
         circulationBuilder(using: circularPath)
         
+        
+     
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [self] in
             piTraversal()
             circularLayer.fillColor = UIColor.clear.cgColor
@@ -68,6 +71,7 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
         pulsivityLayer.lineCap = CAShapeLayerLineCap.round
         pulsivityLayer.lineWidth = 10
         
+        
         view.layer.addSublayer(pulsivityLayer)
         pulsivityMovement()
     }
@@ -76,8 +80,6 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
         let basicAnimation = CABasicAnimation(keyPath: "transform.scale")
         basicAnimation.toValue = 1.4
         basicAnimation.duration = 3.9
-        basicAnimation.repeatCount = Float.infinity
-        basicAnimation.autoreverses = true
         pulsivityLayer?.add(basicAnimation, forKey: "pulp")
     }
     
