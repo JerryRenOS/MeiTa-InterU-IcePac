@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeployableBuild_HelloWorld.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>692B98A09C332205771B111FACA17A63BDBF0F78</string>
+				<key>dateExpires</key>
+				<string>5/9/21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>AAPS2WKL6R.com.yan.DeployableBuild-HelloWorld</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>AAPS2WKL6R</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>AAPS2WKL6R.com.yan.DeployableBuild-HelloWorld</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>DeployableBuild_HelloWorld.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>29b925ff-32e8-4cfe-8119-7afca90482f1</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>AAPS2WKL6R</string>
+				<key>name</key>
+				<string>Yanheng Ren</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
