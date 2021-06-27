@@ -14,6 +14,7 @@
 		8F08620C25B60CCE00DB752C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F08620B25B60CCE00DB752C /* Assets.xcassets */; };
 		8F08620F25B60CCE00DB752C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F08620D25B60CCE00DB752C /* LaunchScreen.storyboard */; };
 		8F08623325B7510D00DB752C /* IroIroRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08623225B7510D00DB752C /* IroIroRGB.swift */; };
+		8F5E4E52262DDBCD00C84F0E /* 瞎写.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5E4E51262DDBCD00C84F0E /* 瞎写.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8F08620E25B60CCE00DB752C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F08621025B60CCE00DB752C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F08623225B7510D00DB752C /* IroIroRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IroIroRGB.swift; sourceTree = "<group>"; };
+		8F5E4E51262DDBCD00C84F0E /* 瞎写.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "瞎写.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8F08620225B60CCA00DB752C /* AppDelegate.swift */,
 				8F08620425B60CCA00DB752C /* SceneDelegate.swift */,
 				8F08620625B60CCA00DB752C /* FrontRunningViewController.swift */,
+				8F5E4E51262DDBCD00C84F0E /* 瞎写.swift */,
 				8F08623225B7510D00DB752C /* IroIroRGB.swift */,
 				8F08620825B60CCA00DB752C /* Main.storyboard */,
 				8F08620B25B60CCE00DB752C /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				8F08620725B60CCA00DB752C /* FrontRunningViewController.swift in Sources */,
 				8F08623325B7510D00DB752C /* IroIroRGB.swift in Sources */,
 				8F08620325B60CCA00DB752C /* AppDelegate.swift in Sources */,
+				8F5E4E52262DDBCD00C84F0E /* 瞎写.swift in Sources */,
 				8F08620525B60CCA00DB752C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
