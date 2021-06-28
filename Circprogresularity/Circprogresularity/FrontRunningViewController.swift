@@ -30,6 +30,19 @@ class FrontRunningViewController: UIViewController, URLSessionDownloadDelegate {
         circularRendering()
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(piTraversal)))
         percentageDisplaySetup()
+//        
+//        let t = DispatchSource.makeTimerSource()
+//   //     t.schedule(deadline: .now(), interval: .seconds(1))
+//        t.schedule(deadline: .now(), repeating: DispatchTimeInterval.seconds(1))
+//        t.setEventHandler(handler: { [weak self] in
+//            print("dispatched")
+//        })
+        
+        let t = DispatchedTimer(timeInterval: 3)
+        t.eventHandler = {
+            print("Timer Fired")
+        }
+        t.resume()
     }
     
     private let byfinbiDisplay: UILabel = {
