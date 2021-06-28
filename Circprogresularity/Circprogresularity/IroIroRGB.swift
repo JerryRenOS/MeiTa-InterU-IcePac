@@ -2,7 +2,7 @@
 //  IroIroRGB.swift
 //  Circprogresularity
 //
-//  Created by Jerry Ren on 1/19/21.
+//  Created by Yan Ren on 1/19/21.
 //
 
 import UIKit

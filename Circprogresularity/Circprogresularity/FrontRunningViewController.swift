@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Circprogresularity
 //
-//  Created by Jerry Ren on 1/18/21.
+//  Created by Yan Ren on 1/18/21.
 //
 
 import UIKit
